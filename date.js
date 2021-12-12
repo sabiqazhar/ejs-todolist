@@ -1,4 +1,4 @@
-module.exports = getDate;
+module.exports.getDate = getDate;
 
 function getDate() {
     let today = new Date();
@@ -15,6 +15,8 @@ function getDate() {
     return day;
 }
 
+
+module.exports.getDay = getDay;
 function getDay(){
     let today = new Date();
 

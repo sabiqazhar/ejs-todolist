@@ -13,7 +13,7 @@ let items = [];
 let workItem =[];
 
 app.get("/", (req, res)=>{
-    let day = date();
+    let day = date.getDate();
     res.render("list", {listTitle: day, newListItems: items});
 });
 

@@ -9,8 +9,8 @@ app.use(express.static("public"));
 
 app.set('view engine', 'ejs');
 
-let items = [];
-let workItem =[];
+const items = [];
+const workItem =[];
 
 app.get("/", (req, res)=>{
     let day = date.getDate();

@@ -14,3 +14,15 @@ function getDate() {
 
     return day;
 }
+
+function getDay(){
+    let today = new Date();
+
+    let option = {
+        weekday: "long"
+    }
+
+    let day = today.toLocaleString("en-US", option);
+
+    return day;
+}
